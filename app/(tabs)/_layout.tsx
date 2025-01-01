@@ -6,23 +6,15 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#fe7d55",
-        // headerStyle: {
-        //   backgroundColor: "#25292e",
-        // },
-        // headerShadowVisible: false,
-        // headerTintColor: "#fff",
-        // tabBarStyle: {
-        //   backgroundColor: "#25292e",
-        // },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Rate",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "home-sharp" : "home-outline"}
+              name={focused ? "star-half" : "star-half-outline"}
               color={color}
               size={24}
             />
@@ -30,25 +22,12 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="history"
         options={{
-          title: "Profile",
+          title: "History",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "person-circle" : "person-circle-outline"}
-              color={color}
-              size={24}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: "Settings",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "settings" : "settings-outline"}
+              name={focused ? "time" : "time-outline"}
               color={color}
               size={24}
             />
